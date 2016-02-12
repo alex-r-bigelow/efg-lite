@@ -1,6 +1,6 @@
 ![Icon](img/icon.png) EFG-lite
 ==============================
-A very simple, bare-bones graph editor.
+A very simple, bare-bones graph editor. Use it [here](https://rawgit.com/alex-r-bigelow/efg-lite/master/index.html).
 
 ## Current abilities:
   - Create and connect nodes (TODO: awkward interaction)
