@@ -1,0 +1,73 @@
+body {
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12pt;
+}
+input, button, select, option {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12pt;
+    padding: 6px;
+    padding-bottom: 3px;
+}
+
+#container {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#controls {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #55dad5;
+}
+
+#editor {
+    font-family: "Courier", "courier new", sans-serif;
+    font-size: 14pt;
+    width: 90%;
+    height: 2em;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.cursor {
+    fill: none;
+    stroke: #b792ea;
+    pointer-events: none;
+}
+
+.node circle {
+    fill: #656565;
+}
+.node circle:hover {
+    stroke: #55dad5;
+    stroke-width: 3px;
+}
+.node.selected circle {
+    fill: #55dad5;
+}
+.node.selected text {
+    fill: #378d89;
+    font-size: 18pt;
+}
+
+.link {
+    stroke: none;
+    fill: rgba(101, 101, 101, 0.5);
+}
+.link:hover {
+    fill: rgba(85, 218, 213, 0.5);
+}

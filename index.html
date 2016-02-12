@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EFG</title>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+    <script type="application/javascript" src="scripts/d3/d3.min.js"></script>
+    <script type="application/javascript" src="scripts/script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <svg id="view">
+            <g id="links"></g>
+            <g id="nodes"></g>
+        </svg>
+    </div>
+    <div id="controls">
+        <textarea id="editor"></textarea>
+        <span>Graph name:<input id="filename" value="Untitled"/></span>
+        <button id="saveButton">Save Graph</button>
+        <select id="downloadMenu">
+            <option disabled="true" selected="true">Download...</option>
+            <option value="d3_json">D3-style JSON</option>
+        </select>
+        <span>Your graphs:<select id="savedFiles"></select></span>
+        <button id="deleteButton">Delete Graph</button>
+    </div>
+</body>
+
+</html>
