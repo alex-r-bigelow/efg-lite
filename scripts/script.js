@@ -62,7 +62,7 @@ function addNode() {
     data.nodes.forEach(function (target) {
         var x = target.x - node.x,
             y = target.y - node.y;
-        if (target !== node && Math.sqrt(x * x + y * y) < 30) {
+        if (target !== node && Math.sqrt(x * x + y * y) < 60) {
             data.links.push({
                 source: node,
                 target: target
@@ -329,14 +329,14 @@ function init() {
         .on("change", downloadFile)
     
     cursor = svg.append("circle")
-        .attr("r", 30)
+        .attr("r", 60)
         .attr("transform", "translate(-100,-100)")
         .attr("class", "cursor");
     
     force = d3.layout.force()
         .size(windowBounds)
-        .linkDistance(120)
-        .charge(-30)
+        .linkDistance(60)
+        .charge(-60)
         .on("tick", tick);
     drag = force.drag();
     drag.on('dragstart', clickNode);
