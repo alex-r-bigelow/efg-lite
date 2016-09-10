@@ -1,4 +1,4 @@
-![Icon](img/icon.png) EFG-lite
+EFG-lite
 ==============================
 A very simple, bare-bones graph editor. Obviously based on / inspired by [this](http://bl.ocks.org/mbostock/929623) D3 example.
 
